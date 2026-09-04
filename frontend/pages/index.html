@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panadería Dulce Aroma</title>
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Panadería Dulce Aroma</div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="inicioycierre.html">Iniciar/Cerrar sesión</a></li>
+      </ul>
+    </nav>
+
+    
+    <section id="inicio" class="hero-content">
+      <div>
+        <p class="eyebrow">Panadería artesanal</p>
+        <h1>Horneamos sabor y tradición</h1>
+        <p>Disfruta de pan fresco, pasteles caseros y desayunos especiales cada mañana.</p>
+        <a class="btn" href="productos.html">Ver productos</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="productos" class="products">
+      <h2>Nuestros productos</h2>
+      <div class="cards">
+        <article class="card" data-title="Pan francés Baguette" data-description="Textura ligera y corteza dorada perfecta para acompañar quesos y sopas." data-price="4500" data-image="Pan francés.jpg" data-alt="Pan francés baguette recién horneado">
+          <div class="card-image">
+            <img src="Pan francés.jpg" alt="Pan francés baguette recién horneado">
+            <div class="card-overlay">Ver más</div>
+          </div>
+          <h3>Pan francés Baguette</h3>
+          <p>Textura ligera y corteza dorada perfecta para acompañar quesos y sopas.</p>
+          <p class="price">COP $4.500</p>
+        </article>
+
+        <article class="card" data-title="Pan japonés Shokupan" data-description="Suave, esponjoso y ligeramente dulce, perfecto para desayunos con crema y mermelada." data-price="6500" data-image="shokupan.jpg" data-alt="Pan japonés Shokupan">
+          <div class="card-image">
+            <img src="shokupan.jpg" alt="Pan japonés Shokupan">
+            <div class="card-overlay">Ver más</div>
+          </div>
+          <h3>Pan japonés Shokupan</h3>
+          <p>Suave, esponjoso y ligeramente dulce, perfecto para desayunos con crema y mermelada.</p>
+          <p class="price">COP $6.500</p>
+        </article>
+
+        <article class="card" data-title="Pretzel alemán" data-description="Un clásico europeo con corteza dorada y sabor ligeramente salado, perfecto con queso." data-price="5000" data-image="pretzel aleman.jpg" data-alt="Pretzel alemán artesanal">
+          <div class="card-image">
+            <img src="pretzel aleman.jpg" alt="Pretzel alemán artesanal">
+            <div class="card-overlay">Ver más</div>
+          </div>
+          <h3>Pretzel alemán</h3>
+          <p>Un clásico europeo con corteza dorada y sabor ligeramente salado, perfecto con queso.</p>
+          <p class="price">COP $5.000</p>
+        </article>
+
+        <article class="card" data-title="Pan de masa madre" data-description="Fermentado lentamente y con sabor complejo, ideal para tostadas gourmet." data-price="6000" data-image="Pan de masa madre.jpg" data-alt="Pan de masa madre artesanal">
+          <div class="card-image">
+            <img src="Pan de masa madre.jpg" alt="Pan de masa madre artesanal">
+            <div class="card-overlay">Ver más</div>
+          </div>
+          <h3>Pan de masa madre</h3>
+          <p>Fermentado lentamente y con sabor complejo, ideal para tostadas gourmet.</p>
+          <p class="price">COP $6.000</p>
+        </article>
+
+        <article class="card" data-title="Pan estilo Ciabatta" data-description="Ligero y con huecos internos, ideal para acompañar ensaladas o servir en sándwiches." data-price="5500" data-image="ciabbata.jpg" data-alt="Pan Ciabatta italiano">
+          <div class="card-image">
+            <img src="ciabbata.jpg" alt="Pan Ciabatta italiano">
+            <div class="card-overlay">Ver más</div>
+          </div>
+          <h3>Pan estilo Ciabatta</h3>
+          <p>Ligero y con huecos internos, ideal para acompañar ensaladas o servir en sándwiches.</p>
+          <p class="price">COP $5.500</p>
+        </article>
+
+        <article class="card" data-title="Pan de semillas" data-description="Perfecto para quienes buscan un pan nutritivo con sabores tostados y crujientes." data-price="5800" data-image="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" data-alt="Pan de semillas artesanal">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Pan de semillas artesanal">
+            <div class="card-overlay">Ver más</div>
+          </div>
+          <h3>Pan de semillas</h3>
+          <p>Perfecto para quienes buscan un pan nutritivo con sabores tostados y crujientes.</p>
+          <p class="price">COP $5.800</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="ubicacion" class="location">
+      <h2>Ubicación</h2>
+      <div class="location-content">
+        <div class="location-info">
+          <div class="location-image">
+            <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?auto=format&fit=crop&w=900&q=80" alt="Panadería artesanal con panes recién horneados">
+          </div>
+          <p>Nos encontramos en <strong>Cra 7 # 45-20</strong>, en el centro de la ciudad.</p>
+          <p>Estamos abiertos todos los días desde las 6:00 a. m. hasta las 8:00 p. m.</p>
+          <p>Parqueadero disponible frente al local.</p>
+        </div>
+        <div class="location-map">
+          <iframe src="https://www.google.com/maps?q=Cra%207%20%2345-20%20Bogota&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de la ubicación de la panadería"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>Visítanos</h2>
+      <div class="contact-info">
+        <p>Estamos en Av. Central 123, abiertos todos los días desde las 6:00 a.m.</p>
+        <p>Teléfono: 57 317 0661470</p>
+        <p>Correo: emanuelgracianocradenas@gmail.com</p>
+      </div>
+      <div class="interactive-contact">
+        <h3>Formulario de contacto</h3>
+        <form id="interactiveContactForm" class="contact-form" action="#" method="post" novalidate>
+          <label for="contact-name">Nombre</label>
+          <input id="contact-name" type="text" placeholder="Tu nombre" required>
+
+          <label for="contact-email">Correo electrónico</label>
+          <input id="contact-email" type="email" placeholder="tu@email.com" required>
+
+          <label for="contact-phone">Número telefónico</label>
+          <input id="contact-phone" type="tel" placeholder="Ej. 3171234567" required>
+
+          <label for="contact-message">Mensaje</label>
+          <textarea id="contact-message" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+
+          <button type="submit" class="btn">Enviar mensaje</button>
+          <div id="contactFeedback" class="feedback-message" aria-live="polite"></div>
+        </form>
+      </div>
+      <div class="order-section">
+        <h3>Haz tu pedido</h3>
+        <form class="contact-form" action="#" method="post">
+          <label for="order-name">Nombre</label>
+          <input id="order-name" type="text" placeholder="Tu nombre" required>
+
+          <label for="order-phone">Teléfono</label>
+          <input id="order-phone" type="tel" placeholder="Ej. 3171234567" required>
+
+          <label for="order-carrera">Carrera</label>
+          <input id="order-carrera" type="text" placeholder="Nombre de la carrera" required>
+
+          <label for="order-product">Producto</label>
+          <input id="order-product" type="text" placeholder="Pan francés, pretzel, etc." required>
+
+          <label for="order-quantity">Cantidad</label>
+          <input id="order-quantity" type="number" min="1" placeholder="1" required>
+
+          <label for="order-notes">Comentarios</label>
+          <textarea id="order-notes" rows="4" placeholder="¿Algo especial que quieras agregar?" required></textarea>
+
+          <button type="submit" class="btn">Enviar pedido</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="redes" class="social">
+      <h2>Síguenos en redes sociales</h2>
+      <p>Comparte tus momentos Dulce Aroma y descubre nuestras promociones diarias.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="WhatsApp">WhatsApp</a>
+        <a href="#" aria-label="TikTok">TikTok</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Panadería Dulce Aroma • Tradición y sabor en cada mordida</p>
+    <p>¿Necesitas ayuda? Usa el asistente debajo.</p>
+  </footer>
+
+  <div class="product-modal" id="productModal" aria-hidden="true">
+    <div class="modal-content">
+      <div class="modal-image-panel">
+        <button class="close-modal" id="closeModal" aria-label="Cerrar">×</button>
+        <img id="modalImage" src="" alt="Imagen del producto">
+        <div class="image-controls">
+          <button id="rotateLeft" class="control-btn" aria-label="Rotar izquierda">⤺</button>
+          <button id="rotateRight" class="control-btn" aria-label="Rotar derecha">⤻</button>
+          <button id="likeBtn" class="like-btn" aria-label="Me gusta">♡</button>
+        </div>
+        <div class="modal-thumbnails" id="modalThumbnails"></div>
+      </div>
+      <div class="modal-copy">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDescription"></p>
+        <p class="modal-price" id="modalPrice"></p>
+        <a class="btn modal-btn" href="#contacto">Ordena ahora</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="assistant-widget" id="assistantWidget">
+    <button class="assistant-toggle" id="assistantToggle">Asistente</button>
+    <div class="assistant-panel hidden" id="assistantPanel" aria-hidden="true">
+      <div class="assistant-header">
+        <h3>Asistente Dulce Aroma</h3>
+        <button class="assistant-close" id="assistantClose" aria-label="Cerrar asistente">×</button>
+      </div>
+      <div class="assistant-messages" id="assistantMessages">
+        <div class="message bot">¡Hola! ¿En qué puedo ayudarte hoy?</div>
+      </div>
+      <form class="assistant-form" id="assistantForm">
+        <input type="text" id="assistantInput" placeholder="Escribe tu consulta..." aria-label="Mensaje al asistente">
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const cards = document.querySelectorAll('.card');
+    const modal = document.getElementById('productModal');
+    const closeModal = document.getElementById('closeModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    const modalPrice = document.getElementById('modalPrice');
+    const modalThumbnails = document.getElementById('modalThumbnails');
+
+    const products = Array.from(cards).map((card, index) => ({
+      index,
+      title: card.dataset.title,
+      description: card.dataset.description,
+      price: card.dataset.price,
+      image: card.dataset.image,
+      alt: card.dataset.alt,
+    }));
+
+    function updateModal(product) {
+      modalImage.src = product.image;
+      modalImage.alt = product.alt;
+      modalTitle.textContent = product.title;
+      modalDescription.textContent = product.description;
+      modalPrice.textContent = `Precio: COP $${Number(product.price).toLocaleString('es-CO')}`;
+      document.querySelectorAll('.thumbnail-item').forEach((thumb, thumbIndex) => {
+        thumb.classList.toggle('active', thumbIndex === product.index);
+      });
+      if (typeof resetTransform === 'function') resetTransform();
+      if (document.getElementById('likeBtn')) {
+        document.getElementById('likeBtn').classList.remove('liked');
+        document.getElementById('likeBtn').textContent = '♡';
+      }
+    }
+
+    function openModal(productIndex) {
+      updateModal(products[productIndex]);
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+    }
+
+    function createThumbnails() {
+      modalThumbnails.innerHTML = '';
+      products.forEach(product => {
+        const thumb = document.createElement('button');
+        thumb.type = 'button';
+        thumb.className = 'thumbnail-item';
+        thumb.setAttribute('aria-label', `Mostrar ${product.title}`);
+        thumb.style.backgroundImage = `url(${product.image})`;
+        thumb.addEventListener('click', () => openModal(product.index));
+        modalThumbnails.appendChild(thumb);
+      });
+    }
+
+    cards.forEach((card, index) => {
+      card.addEventListener('click', () => openModal(index));
+    });
+
+    createThumbnails();
+
+    closeModal.addEventListener('click', () => {
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+    });
+
+    modal.addEventListener('click', event => {
+      if (event.target === modal) {
+        modal.classList.remove('open');
+        modal.setAttribute('aria-hidden', 'true');
+      }
+    });
+
+    const assistantToggle = document.getElementById('assistantToggle');
+    const assistantPanel = document.getElementById('assistantPanel');
+    const assistantClose = document.getElementById('assistantClose');
+    const assistantForm = document.getElementById('assistantForm');
+    const assistantMessages = document.getElementById('assistantMessages');
+    const assistantInput = document.getElementById('assistantInput');
+
+    assistantToggle.addEventListener('click', () => {
+      assistantPanel.classList.toggle('hidden');
+      assistantPanel.setAttribute('aria-hidden', assistantPanel.classList.contains('hidden'));
+    });
+
+    assistantClose.addEventListener('click', () => {
+      assistantPanel.classList.add('hidden');
+      assistantPanel.setAttribute('aria-hidden', 'true');
+    });
+
+    assistantForm.addEventListener('submit', event => {
+      event.preventDefault();
+      const userText = assistantInput.value.trim();
+      if (!userText) return;
+
+      const userMessage = document.createElement('div');
+      userMessage.className = 'message user';
+      userMessage.textContent = userText;
+      assistantMessages.appendChild(userMessage);
+
+      assistantInput.value = '';
+      assistantMessages.scrollTop = assistantMessages.scrollHeight;
+
+      setTimeout(() => {
+        const botMessage = document.createElement('div');
+        botMessage.className = 'message bot';
+        botMessage.textContent = 'Gracias por tu pregunta. Nuestro equipo te responderá pronto o puedes llamar al +57 317 0661470.';
+        assistantMessages.appendChild(botMessage);
+        assistantMessages.scrollTop = assistantMessages.scrollHeight;
+      }, 600);
+    });
+
+    const interactiveContactForm = document.getElementById('interactiveContactForm');
+    const contactFeedback = document.getElementById('contactFeedback');
+
+    function isValidEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    if (interactiveContactForm) {
+      interactiveContactForm.addEventListener('submit', event => {
+        event.preventDefault();
+
+        const name = document.getElementById('contact-name').value.trim();
+        const email = document.getElementById('contact-email').value.trim();
+        const phone = document.getElementById('contact-phone').value.trim();
+        const message = document.getElementById('contact-message').value.trim();
+        const errors = [];
+
+        if (!name) errors.push('El nombre es obligatorio');
+        if (!email) {
+          errors.push('El correo electrónico es obligatorio');
+        } else if (!isValidEmail(email)) {
+          errors.push('El correo electrónico no tiene un formato válido');
+        }
+        if (!phone) errors.push('El número telefónico es obligatorio');
+        if (!message) errors.push('El mensaje es obligatorio');
+
+        if (errors.length) {
+          contactFeedback.textContent = errors.join('. ');
+          contactFeedback.className = 'feedback-message error';
+          contactFeedback.style.display = 'block';
+          return;
+        }
+
+        contactFeedback.textContent = '¡Gracias! Tu mensaje se ha enviado con éxito.';
+        contactFeedback.className = 'feedback-message success';
+        contactFeedback.style.display = 'block';
+        interactiveContactForm.reset();
+
+        setTimeout(() => {
+          contactFeedback.style.display = 'none';
+        }, 5000);
+      });
+    }
+
+    // --- Interacciones avanzadas de imagen (arrastrar, zoom, rotar, me gusta) ---
+    const rotateLeft = document.getElementById('rotateLeft');
+    const rotateRight = document.getElementById('rotateRight');
+    const likeBtn = document.getElementById('likeBtn');
+
+    let transformState = { scale: 1, rotate: 0, x: 0, y: 0 };
+    let isDragging = false;
+    let lastPointer = { x: 0, y: 0 };
+
+    function applyTransform() {
+      modalImage.style.transform = `translate(${transformState.x}px, ${transformState.y}px) rotate(${transformState.rotate}deg) scale(${transformState.scale})`;
+    }
+
+    function resetTransform() {
+      transformState = { scale: 1, rotate: 0, x: 0, y: 0 };
+      applyTransform();
+      modalImage.classList.remove('grabbing');
+    }
+
+    // Pointer drag (pan)
+    modalImage.addEventListener('pointerdown', (e) => {
+      isDragging = true;
+      lastPointer.x = e.clientX;
+      lastPointer.y = e.clientY;
+      modalImage.classList.add('grabbing');
+      modalImage.setPointerCapture(e.pointerId);
+    });
+
+    modalImage.addEventListener('pointermove', (e) => {
+      if (!isDragging) return;
+      const dx = e.clientX - lastPointer.x;
+      const dy = e.clientY - lastPointer.y;
+      lastPointer.x = e.clientX;
+      lastPointer.y = e.clientY;
+      transformState.x += dx;
+      transformState.y += dy;
+      applyTransform();
+    });
+
+    modalImage.addEventListener('pointerup', (e) => {
+      isDragging = false;
+      try { modalImage.releasePointerCapture(e.pointerId); } catch (err) {}
+      modalImage.classList.remove('grabbing');
+    });
+
+    modalImage.addEventListener('pointercancel', () => {
+      isDragging = false;
+      modalImage.classList.remove('grabbing');
+    });
+
+    // Wheel zoom
+    modalImage.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      const delta = -e.deltaY * 0.0015;
+      transformState.scale = Math.min(3, Math.max(0.4, transformState.scale + delta));
+      applyTransform();
+    }, { passive: false });
+
+    // Double click to toggle zoom
+    modalImage.addEventListener('dblclick', () => {
+      transformState.scale = transformState.scale > 1 ? 1 : 2;
+      applyTransform();
+    });
+
+    // Rotate controls
+    if (rotateLeft) rotateLeft.addEventListener('click', () => { transformState.rotate -= 15; applyTransform(); });
+    if (rotateRight) rotateRight.addEventListener('click', () => { transformState.rotate += 15; applyTransform(); });
+
+    // Like button
+    if (likeBtn) likeBtn.addEventListener('click', () => {
+      likeBtn.classList.toggle('liked');
+      likeBtn.textContent = likeBtn.classList.contains('liked') ? '❤' : '♡';
+    });
+
+    // Reset transform when modal closed
+    closeModal.addEventListener('click', resetTransform);
+    modal.addEventListener('click', event => { if (event.target === modal) resetTransform(); });
+  </script>
+  <script> src="prueba.js" </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

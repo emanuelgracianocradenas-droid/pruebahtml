@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f1e6;
+  color: #3d2b1f;
+  margin: 0;
+  padding: 2rem;
+}
+
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid #f0e2d2;
+  margin-bottom: 1.75rem;
+  border-radius: 20px;
+}
+
+.page-header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.page-header .logo {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #6b3f1d;
+  letter-spacing: 0.5px;
+}
+
+.page-header .nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header .nav-links a {
+  color: #3d2b1f;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.85rem 1.15rem;
+  background: #fff4e7;
+  border-radius: 999px;
+  border: 1px solid #f0e2d2;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.page-header .nav-links a:hover {
+  transform: translateY(-1px);
+  background: #d98c2b;
+  color: white;
+}
+
+.table-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin: 1.5rem 0 0.5rem;
+  color: #6b3f1d;
+}
+
+p.lead {
+  text-align: center;
+  margin: 0 0 1.5rem;
+  color: #6b3f1d;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 820px;
+}
+
+thead {
+  background: linear-gradient(90deg, #d98c2b, #f2b66a);
+  color: white;
+}
+
+th, td {
+  padding: 1rem 0.9rem;
+  text-align: left;
+  border-bottom: 1px solid #f0e2d2;
+}
+
+th {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+tbody tr:nth-child(odd) {
+  background: #fff8ef;
+}
+
+tbody tr:hover {
+  background: #ffe4b3;
+}
+
+.status-completed {
+  color: #2f7a2f;
+  font-weight: 700;
+}
+
+.status-pending {
+  color: #b45a39;
+  font-weight: 700;
+}
+
+.status-delayed {
+  color: #8a2c2c;
+  font-weight: 700;
+}
+
+.summary {
+  padding: 1rem 1.5rem 2rem;
+  background: #fff4e7;
+  color: #5a4639;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
