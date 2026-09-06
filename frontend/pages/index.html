@@ -16,8 +16,8 @@
         <li><a href="productos.html">Productos</a></li>
         <li><a href="#ubicacion">Ubicación</a></li>
         <li><a href="#contacto">Contacto</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="inicioycierre.html">Iniciar/Cerrar sesión</a></li>
+        <li id="navRegistro"><a href="registro.php">Registrarme</a></li>
+        <li id="navSesion"><a href="login.php">Iniciar sesión</a></li>
       </ul>
     </nav>
 
@@ -223,6 +223,69 @@
   </div>
 
   <script>
+    const estadoAutenticacion = new URLSearchParams(window.location.search).get('estado');
+    const mensajesAutenticacion = {
+      registro_exitoso: '¡Registro completado! Ya puedes iniciar sesión cuando quieras.',
+      login_exitoso: '¡Sesión iniciada correctamente! Bienvenido a Panadería Dulce Aroma.',
+      sesion_cerrada: 'Tu sesión se cerró correctamente.'
+    };
+    if (mensajesAutenticacion[estadoAutenticacion]) {
+      const aviso = document.createElement('div');
+      aviso.className = 'auth-status-message';
+      aviso.setAttribute('role', 'status');
+      aviso.textContent = mensajesAutenticacion[estadoAutenticacion];
+      document.body.prepend(aviso);
+      window.history.replaceState({}, document.title, window.location.pathname + window.location.hash);
+      window.setTimeout(() => aviso.remove(), 6000);
+    }
+
+    async function actualizarNavegacionSesion() {
+      const registro = document.getElementById('navRegistro');
+      const sesion = document.getElementById('navSesion');
+      if (!sesion) return;
+
+      try {
+        const respuesta = await fetch('../../backend/estado_sesion.php', {
+          credentials: 'same-origin',
+          headers: { 'Accept': 'application/json' },
+          cache: 'no-store'
+        });
+        if (!respuesta.ok) return;
+
+        const estado = await respuesta.json();
+        if (!estado.authenticated || typeof estado.csrf_token !== 'string') return;
+
+        if (registro) registro.remove();
+        sesion.replaceChildren();
+
+        const saludo = document.createElement('span');
+        saludo.className = 'nav-user';
+        saludo.textContent = `Hola, ${estado.nombre}`;
+
+        const formulario = document.createElement('form');
+        formulario.className = 'nav-logout-form';
+        formulario.method = 'post';
+        formulario.action = '../../backend/cerrar_sesion.php';
+
+        const token = document.createElement('input');
+        token.type = 'hidden';
+        token.name = 'csrf_token';
+        token.value = estado.csrf_token;
+
+        const boton = document.createElement('button');
+        boton.className = 'nav-logout';
+        boton.type = 'submit';
+        boton.textContent = 'Cerrar sesión';
+
+        formulario.append(token, boton);
+        sesion.append(saludo, formulario);
+      } catch (error) {
+        console.warn('No fue posible comprobar la sesión.', error);
+      }
+    }
+
+    actualizarNavegacionSesion();
+
     const cards = document.querySelectorAll('.card');
     const modal = document.getElementById('productModal');
     const closeModal = document.getElementById('closeModal');

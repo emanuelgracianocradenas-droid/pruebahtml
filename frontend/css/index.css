@@ -40,6 +40,22 @@ body {
   z-index: 15;
 }
 
+.auth-status-message {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  max-width: min(420px, calc(100vw - 2rem));
+  padding: .95rem 1.1rem;
+  color: #174c30;
+  font-weight: 700;
+  line-height: 1.45;
+  background: #effaf2;
+  border: 1px solid #94d8aa;
+  border-radius: 12px;
+  box-shadow: 0 12px 28px rgba(19, 83, 47, .16);
+}
+
 .products-page .navbar {
   background: rgba(255, 255, 255, 0.96);
   color: var(--brown);
@@ -87,7 +103,8 @@ body {
   list-style: none;
 }
 
-.nav-links a {
+.nav-links a,
+.nav-logout {
   color: white;
   text-decoration: none;
   font-weight: 700;
@@ -97,15 +114,40 @@ body {
   transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
-.nav-links a:hover {
+.nav-logout {
+  padding: 0.7rem 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+
+.nav-links a:hover,
+.nav-logout:hover {
   transform: translateY(-1px);
   background: rgba(255, 255, 255, 0.16);
 }
 
-.nav-links a:focus-visible {
+.nav-links a:focus-visible,
+.nav-logout:focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.9);
   outline-offset: 4px;
 }
+
+.nav-links #navSesion {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.nav-user {
+  color: #fff5df;
+  font-size: 0.9rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.nav-logout-form { margin: 0; }
 
 .hero-content {
   display: flex;
