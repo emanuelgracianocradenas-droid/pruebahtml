@@ -16,8 +16,8 @@
         <li><a href="productos.html">Productos</a></li>
         <li><a href="#ubicacion">Ubicación</a></li>
         <li><a href="#contacto">Contacto</a></li>
-        <li id="navRegistro"><a href="frontend/php/registro.php">Registrarme</a></li>
-        <li id="navSesion"><a href="frontend/php/login.php">Iniciar sesión</a></li>
+        <li id="navRegistro"><a href="frontend/pages/registro.php">Registrarme</a></li>
+        <li id="navSesion"><a href="frontend/pages/login.php">Iniciar sesión</a></li>
       </ul>
     </nav>
 
@@ -245,7 +245,7 @@
       if (!sesion) return;
 
       try {
-        const respuesta = await fetch('../../backend/estado_sesion.php', {
+        const respuesta = await fetch('backend/estado_sesion.php', {
           credentials: 'same-origin',
           headers: { 'Accept': 'application/json' },
           cache: 'no-store'
@@ -265,7 +265,7 @@
         const formulario = document.createElement('form');
         formulario.className = 'nav-logout-form';
         formulario.method = 'post';
-        formulario.action = '../../backend/cerrar_sesion.php';
+        formulario.action = 'backend/cerrar_sesion.php';
 
         const token = document.createElement('input');
         token.type = 'hidden';

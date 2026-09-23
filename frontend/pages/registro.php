@@ -26,7 +26,7 @@ $selected = static fn (string $key, string $option): string => ($old[$key] ?? ''
 </head>
 <body class="auth-page">
   <main class="auth-shell">
-    <a class="auth-back" href="index.html">← Volver a Panadería Dulce Aroma</a>
+    <a class="auth-back" href="../../index.html">← Volver a Panadería Dulce Aroma</a>
     <section class="auth-card" aria-labelledby="registro-titulo">
       <header class="auth-card__header">
         <h1 id="registro-titulo">Crea tu cuenta</h1>

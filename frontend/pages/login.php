@@ -22,7 +22,7 @@ $message = $errors[$error] ?? '';
 </head>
 <body class="auth-page">
   <main class="auth-shell" style="max-width: 540px;">
-    <a class="auth-back" href="index.html">← Volver a Panadería Dulce Aroma</a>
+    <a class="auth-back" href="../../index.html">← Volver a Panadería Dulce Aroma</a>
     <section class="auth-card" aria-labelledby="login-titulo">
       <header class="auth-card__header">
         <h1 id="login-titulo">Bienvenido de nuevo</h1>
