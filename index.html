@@ -13,11 +13,11 @@
       <div class="logo">Panadería Dulce Aroma</div>
       <ul class="nav-links">
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="#ubicacion">Ubicación</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li id="navRegistro"><a href="registro.php">Registrarme</a></li>
-        <li id="navSesion"><a href="login.php">Iniciar sesión</a></li>
+        <li><a href="frontend/html/productos.html">Productos</a></li>
+        <li><a href="frontend/html/ubicacion.html">Ubicación</a></li>
+        <li><a href="frontend/html/contacto.html">Contacto</a></li>
+        <li id="navRegistro"><a href="frontend/php/registro.php">Registrarme</a></li>
+        <li id="navSesion"><a href="frontend/php/login.php">Iniciar sesión</a></li>
       </ul>
     </nav>
 
@@ -27,7 +27,7 @@
         <p class="eyebrow">Panadería artesanal</p>
         <h1>Horneamos sabor y tradición</h1>
         <p>Disfruta de pan fresco, pasteles caseros y desayunos especiales cada mañana.</p>
-        <a class="btn" href="productos.html">Ver productos</a>
+        <a class="btn" href="frontend/html/productos.html">Ver productos</a>
       </div>
     </section>
   </header>
@@ -213,7 +213,7 @@
         <button class="assistant-close" id="assistantClose" aria-label="Cerrar asistente">×</button>
       </div>
       <div class="assistant-messages" id="assistantMessages">
-        <div class="message bot">¡Hola! ¿En qué puedo ayudarte hoy?</div>
+        <div class="message bot">¡Hola! ¿En qué puedo ayudarte hoy? También puedes llamarnos al 3170661470.</div>
       </div>
       <form class="assistant-form" id="assistantForm">
         <input type="text" id="assistantInput" placeholder="Escribe tu consulta..." aria-label="Mensaje al asistente">
@@ -390,7 +390,7 @@
       setTimeout(() => {
         const botMessage = document.createElement('div');
         botMessage.className = 'message bot';
-        botMessage.textContent = 'Gracias por tu pregunta. Nuestro equipo te responderá pronto o puedes llamar al +57 317 0661470.';
+        botMessage.textContent = 'Gracias por tu pregunta. Nuestro equipo te responderá pronto o puedes llamar al 3170661470.';
         assistantMessages.appendChild(botMessage);
         assistantMessages.scrollTop = assistantMessages.scrollHeight;
       }, 600);
